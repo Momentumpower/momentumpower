@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #333;
+    
+    margin: 0;
+    padding: 0;
+}
+:root{
+  --darkblue: #0c0b22;
+}
+.customclr{
+    color: orangered;
+}
+.customclr1{
+    color: var(--darkblue) !important;
+}
+
+.active{
+color: orangered;
+}
+
+/* Other CSS styles... */
+a{
+    text-decoration: none !important;
+    color: gray;
+}
+/* Header styles */
+header {
+    background-color: var(--darkblue);
+    color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 1111;
+}
+#headerLogo{
+    display: flex;
+    align-items: center;
+}
+#headerLogo img{
+height: 100px;
+width: 100px;
+margin-left: 20px;
+}
+.logo img {
+    max-width: 150px; /* Adjust the max-width to fit your logo size */
+}
+
+.header-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Other CSS styles... */
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Page section styles */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+}
+
+
+
+footer {
+    background-color: var(--darkblue);
+    color: #fff;
+    padding: 20px 0;
+}
+footer h3{
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+}
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-section p,.footer-section ul{
+    text-align: left;
+}
+.footer-section ul li {
+  list-style-type: none;
+
+}
+.footer-section ul li i{
+    padding-right: 8px;
+    color: orangered;
+}
+.footer-section ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+.footer-section ul li:hover{
+    transform: scale(1.1);
+    
+}
+ li:hover a{
+    color: orangered !important;
+}
+a:hover{
+    color: orangered !important;
+}
+/* Links styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.homeSec h2{
+color: var(--darkblue);
+text-align: center;
+padding: 20px 0;
+}
+
+
+/* index */
+.compIntro p{
+    text-align: justify;
+}
+
+.serviceCard:hover{
+    transform: scale(1.02);
+}
+
+
+.serviceCard:hover  a{
+    color: orangered !important;
+}
+#services i{
+    color: #fff;
+}
+/* Add a slide-in animation for carousel captions */
+.carousel-caption.slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.carousel-inner .carousel-item.active .carousel-caption.slide-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.carouselConatinter{
+    background-color: rgba(39,37,37, 0.7);
+
+}
+ #carouselExampleCaptions{
+    position: relative;
+    max-height: 650px;
+    width: 100%;
+}
+#carouselExampleCaptions .carousel-inner img{
+   
+    max-height: 650px;
+} 
+@media screen and (max-width:500px){
+    .carousel-inner>div{
+        height: 450px !important;
+    }
+    .carousel-inner>div img{
+height: 100%;
+    }
+}
+@media screen and (max-width:360px){
+    .carousel-inner>div{
+        height: 600px !important;
+    }
+    .carousel-inner>div img{
+height: 100%;
+    }
+}
+
+/* service box */
+#services .icon-box {
+    padding: 50px 20px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 1px solid #ebe6e4;
+    height: 220px;
+    position: relative;
+    background: #faf9f8;
+    border-radius: 0.3rem;
+    transition: all 1s;
+}
+@media screen and (max-width:1200px ) and (min-width:992px){
+    #services .icon-box {
+        height: 255px;
+    }
+}
+#services .icon {
+    position: absolute;
+    top: -36px;
+    left: calc(50% - 36px);
+    transition: 0.2s;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 72px;
+    height: 72px;
+    background-color: var(--darkblue);
+}
+#services .description {
+    line-height: 24px;
+    font-size: 14px;
+}
+#services .icon-box a{
+    color: var(--darkblue);
+}
+#services .icon-box:hover{
+    transform: scale(1.05);
+}
+#services .icon-box:hover a{
+   color: orangered;
+}
+#services .icon-box:hover {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+
+/* move up icon */
+#moveupicon{
+   
+    height: 40px;
+    width: 40px;
+    background-color: var(--darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    position: fixed;
+    top: 90%;
+    left: 120%;
+    transition: 1s;
+    visibility: hidden;
+}
+#moveupicon i{
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+/* conatct page */
+/* form */
+#contactForm .php-email-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: #fff;
+}
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 2px;
+}
+.section-title {
+    padding-bottom: 30px;
+    text-align: justify;
+}
+.contactForm .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+
+#contactForm .php-email-form button[type="submit"] {
+    background: var(--darkblue);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
